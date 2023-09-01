@@ -72,7 +72,7 @@ export class Overlay {
             this.options.classList = [];
         }
 
-        this.options.dismissible = options.dismissible === true;
+        this.options.dismissible = options.dismissible !== false;
 
         if (options.autoCloseAfter && +options.autoCloseAfter > 0) {
             this.options.autoCloseAfter = +options.autoCloseAfter;
@@ -190,7 +190,7 @@ export class Overlay {
     /**
      * Register events to be call later at the right time
      *
-     * @param eventName string Name of the event: 'close', 'ready' or any event that registered via addEventListener
+     * @param eventName string Name of the event: 'close', 'ready' or any event that can be registered via addEventListener
      * @param callback function A callable function to invoke when the event occurs
      * @returns void
      */
@@ -216,6 +216,8 @@ export class Overlay {
         }
         // return this;
     }
+
+    // Add event delegation with signatur on(eventName, targetSelector, callback)
 
     /**
      * Clean up, remove event listeners and call/envoke on("close") callbacks
