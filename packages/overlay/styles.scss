@@ -131,7 +131,7 @@
         position: relative;
         border-radius: var(--overlay-border-radius);
         // overflow: hidden;
-        // max-width: 75%;
+        max-width: calc(100% - 4rem);
         // transition: transform 0.33s ease-in-out;
 
         // min-height: min(100vh - 2rem - var(--margin-top), var(--overlay-height));

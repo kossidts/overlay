@@ -1,5 +1,6 @@
 import "./style.css";
-import { Overlay, $overlay } from "./components/Overlay";
+import { Overlay, $overlay } from "@kdts/overlay";
+import "@kdts/overlay/style.css";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -8,18 +9,18 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <button id="overlay-modal" type="button">Open the Modal</button>
     </div>
     <div class="card">
-        <h2>Toast</h2>
+        <h2>Toast for Notification feedback</h2>
 
         <div class="grid">
-            <button class="overlay-toast" type="button" data-position="toast-top toast-left">Toast message (top left)</button>
-            <button class="overlay-toast" type="button" data-position="toast-top toast-center">Toast message (top center)</button>
-            <button class="overlay-toast" type="button" data-position="toast-top toast-right">Toast message (top right)</button>
-            <button class="overlay-toast" type="button" data-position="toast-center toast-left">Toast message (center left)</button>
-            <button class="overlay-toast" type="button" data-position="toast-centered">Toast message (centered)</button>
-            <button class="overlay-toast" type="button" data-position="toast-center toast-right">Toast message (center right)</button>
-            <button class="overlay-toast" type="button" data-position="toast-bottom toast-left">Toast message (bottom left)</button>
-            <button class="overlay-toast" type="button" data-position="toast-bottom toast-center">Toast message (bottom center)</button>
-            <button class="overlay-toast" type="button" data-position="toast-bottom toast-right">Toast message (bottom right)</button>
+            <button class="overlay-toast" type="button" data-position="toast-top toast-left">top left</button>
+            <button class="overlay-toast" type="button" data-position="toast-top toast-center">top center</button>
+            <button class="overlay-toast" type="button" data-position="toast-top toast-right">top right</button>
+            <button class="overlay-toast" type="button" data-position="toast-center toast-left">center left</button>
+            <button class="overlay-toast" type="button" data-position="toast-centered">centered</button>
+            <button class="overlay-toast" type="button" data-position="toast-center toast-right">center right</button>
+            <button class="overlay-toast" type="button" data-position="toast-bottom toast-left">bottom left</button>
+            <button class="overlay-toast" type="button" data-position="toast-bottom toast-center">bottom center</button>
+            <button class="overlay-toast" type="button" data-position="toast-bottom toast-right">bottom right</button>
         </div>
     </div>
   </div>

@@ -1,42 +1,21 @@
 {
-    "name": "@kdts/overlay",
+    "name": "@kdts/overlay-demo",
     "private": true,
-    "version": "0.1.0",
-    "type": "module",
-    "author": "Kossi D. T. Saka",
-    "license": "MIT",
-    "files": [
-        "dist/Overlay"
-    ],
-    "types": "dist/Overlay/index.d.ts",
-    "main": "./dist/Overlay/overlay.umd.cjs",
-    "module": "./dist/Overlay/overlay.js",
-    "exports": {
-        ".": {
-            "import": "./dist/Overlay/overlay.js",
-            "require": "./dist/Overlay/overlay.umd.cjs"
-        }
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "devDependencies": {
+        "typescript": "^5.2.2",
+        "vite": "^4.4.11",
+        "vite-plugin-dts": "^3.6.0"
     },
     "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build",
-        "preview": "vite preview"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "devDependencies": {
-        "sass": "^1.63.6",
-        "typescript": "^5.0.2",
-        "vite": "^4.4.0",
-        "vite-plugin-dts": "^3.5.3"
-    },
-    "keywords": [
-        "overlay",
-        "modal",
-        "dialog",
-        "toast",
-        "banner",
-        "window",
-        "browser",
-        "widget",
-        "client"
-    ]
+    "workspaces": [
+        "packages/*"
+    ],
+    "type": "module",
+    "author": "Kossi D. T. Saka",
+    "license": "MIT"
 }

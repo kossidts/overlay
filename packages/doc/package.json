@@ -1,0 +1,20 @@
+{
+    "name": "@kdts/overlay-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "sass": "^1.69.3"
+    },
+    "type": "module",
+    "author": "Kossi D. T. Saka",
+    "license": "MIT",
+    "dependencies": {
+        "@kdts/overlay": "^0.1.0"
+    }
+}

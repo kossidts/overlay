@@ -139,6 +139,7 @@ export class Overlay {
 
         $container.innerHTML = template;
         $container.className = "overlay-container";
+        // role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description"
         this.overlay.className = "overlay";
         // this.overlay.setAttribute('role', 'alert');
         // this.overlay.setAttribute('aria-hidden', true);

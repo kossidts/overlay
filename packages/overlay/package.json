@@ -1,0 +1,39 @@
+{
+    "name": "@kdts/overlay",
+    "version": "0.1.0",
+    "type": "module",
+    "author": "Kossi D. T. Saka",
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/index.d.ts",
+    "main": "./dist/overlay.umd.cjs",
+    "module": "./dist/overlay.js",
+    "exports": {
+        ".": {
+            "import": "./dist/overlay.js",
+            "require": "./dist/overlay.umd.cjs"
+        },
+        "./style.css": "./dist/style.css"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.kdts.de/kdts/overlay.git"
+    },
+    "keywords": [
+        "overlay",
+        "modal",
+        "dialog",
+        "toast",
+        "banner",
+        "window",
+        "browser",
+        "widget",
+        "client"
+    ]
+}
